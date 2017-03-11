@@ -1,0 +1,23 @@
+{
+  "name": "udacity-p4",
+  "version": "1.0.0",
+  "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "lwip": "node ./src/js/lwip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocobuckle/performance-optimisation.git"
+  },
+  "author": "Conor Doyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chocobuckle/performance-optimisation/issues"
+  },
+  "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "lwip": "0.0.9"
+  }
+}
