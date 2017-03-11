@@ -2,22 +2,35 @@
   "name": "udacity-p4",
   "version": "1.0.0",
   "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
-  "main": "./src/js/index.js",
   "scripts": {
-    "lwip": "node ./src/js/lwip.js"
+    "lwip": "node ./src/js/lwip.js",
+    "imageminIndex": "imagemin ./src/img/* --out-dir=build",
+    "imageminPizza": "imagemin ./dist/views/images/pizzeria.jpg ./dist/views/images -p=webp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chocobuckle/performance-optimisation.git"
   },
+  "main": "./src/js/index.js",
   "author": "Conor Doyle",
   "license": "ISC",
+  "keywords": [
+    "udacity",
+    "performance",
+    "optimisation",
+    "optimization",
+    "rendering",
+    "Conor Doyle",
+    "chocobuckle"
+  ],
   "bugs": {
     "url": "https://github.com/chocobuckle/performance-optimisation/issues"
   },
   "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
   "dependencies": {},
   "devDependencies": {
+    "imagemin": "^5.2.2",
+    "imagemin-webp": "^4.0.0",
     "lwip": "0.0.9"
   }
 }
