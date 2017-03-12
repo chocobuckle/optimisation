@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
   "scripts": {
-    "resizePizzaImage": "node ./src/js/resizeImages.js",
-    "convertPizzaImageToWebp": "node ./src/js/convertPizzaJPGToWebp.js",
-    "compressImages": "node ./src/js/compressImages.js",
-    "convertPNGToWebp": "node ./src/js/convertPNGToWebp.js",
-    "convertJPGToWebp": "node ./src/js/convertJPGToWebp.js",
-    "buildImages": "npm run resizePizzaImage && npm run convertPizzaImageToWebp && npm run compressImages && npm run convertPNGToWebp && npm run convertJPGToWebp"
+    "resizePizzaImage": "node ./src/js/resizeImages.js -s",
+    "convertPizzaImageToWebp": "node ./src/js/convertPizzaJPGToWebp.js -s",
+    "compressImages": "node ./src/js/compressImages.js -s",
+    "convertPNGToWebp": "node ./src/js/convertPNGToWebp.js -s",
+    "convertJPGToWebp": "node ./src/js/convertJPGToWebp.js -s",
+    "buildImages": "npm run resizePizzaImage -s && npm run convertPizzaImageToWebp -s && npm run compressImages -s && npm run convertPNGToWebp -s && npm run convertJPGToWebp -s"
   },
   "repository": {
     "type": "git",

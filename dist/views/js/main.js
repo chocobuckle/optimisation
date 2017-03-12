@@ -556,7 +556,7 @@ function loadPizzas() {
   for (i = 0; i < pizzaAmount; i++) {
     var elem = document.createElement('img');
     elem.classList.add('mover');
-    elem.src = "images/pizza.png";
+    elem.src = "./images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.style.left = (i % pizzaColumns) * s + 'px';
