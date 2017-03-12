@@ -4,33 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cameron Pittman: Portfolio</title>
-
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-        <!-- Web Font Loader for loading fonts asynchronously.
-    For more info, go to https://github.com/typekit/webfontloader -->
-    <script type='text/javascript'>
-      WebFontConfig = {
-        google: { families: [ 'Open Sans: 400,700' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })();
-    </script>
-
-    <!-- Fallback if Javascript is turned off. -->
-<!--     <noscript>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-    </noscript> -->
     <link href="./src/css/style.css" rel="stylesheet">
     <link href="./src/css/print.css" rel="stylesheet">
-
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -108,5 +83,27 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
+
+     <!-- Web Font Loader for loading fonts asynchronously.
+    For more info, go to https://github.com/typekit/webfontloader -->
+    <script type='text/javascript'>
+      WebFontConfig = {
+        google: { families: [ 'Open Sans:400,700' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+    <!-- Fallback if Javascript is turned off. -->
+    <noscript>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    </noscript>
   </body>
 </html>
