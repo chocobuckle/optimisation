@@ -11,12 +11,12 @@ lwip.open('./src/views/images/pizzeria.jpg', function(err, image) {
   });
 });
 
-lwip.open('./src/views/images/pizzeriaForPizzaHTML.jpg', function(err, image) {
+lwip.open('./src/views/images/pizzeria.jpg', function(err, image) {
   if (err) throw err;
   image.resize(720, 540, function(err, image) {
     if (err) throw err;
     console.log('pizzeriaForPizzaHTML.jpg image resized.');
-    image.writeFile('./src/views/images/pizzeriaForPizzaHTMLResized.jpg', function(err) {
+    image.writeFile('./dist/views/images/pizzeriaForPizzaHTMLResized.jpg', function(err) {
       if (err) throw err;
     });
   });

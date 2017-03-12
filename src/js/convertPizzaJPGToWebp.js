@@ -11,7 +11,7 @@ imagemin(['./dist/img/pizzeria.jpg'], './dist/img', {
     console.log('pizzeria.jpg lossy converted to Webp.');
 });
 
-imagemin(['./src/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images/', {
+imagemin(['./dist/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images/', {
     use: [
         imageminWebp({
           quality: 70

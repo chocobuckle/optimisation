@@ -13,7 +13,17 @@ imagemin(['./src/img/*.{jpg,png}'], './dist/img/', {
     console.log('Images compressed.');
 });
 
-imagemin(['./src/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images', {
+imagemin(['./src/views/images/*.png'], './dist/views/images/', {
+    plugins: [
+      imageminPngquant({
+        quality: '65-80'
+      })
+    ]
+}).then(() => {
+    console.log('pizza.png file compressed.');
+});
+
+imagemin(['./dist/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images', {
     plugins: [
       imageminMozjpeg()
     ]
