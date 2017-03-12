@@ -36,6 +36,7 @@
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
     "imagemin-webp": "^4.0.0",
-    "lwip": "0.0.9"
+    "lwip": "0.0.9",
+    "lwip-promise": "^0.1.0"
   }
 }
