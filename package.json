@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
   "scripts": {
-    "lwip": "node ./src/js/lwip.js",
-    "imageminIndex": "imagemin ./src/img/* -o ./dist/img/",
-    "imageminPizza": "imagemin ./dist/views/images/pizzeria.jpg ./dist/views/images -p=webp"
+    "resizePizzaImage": "node ./src/js/resizeImages.js",
+    "convertPizzaImageToWebp": "node ./src/js/convertPizzaJPGToWebp.js",
+    "compressImages": "node ./src/js/compressImages.js",
+    "convertPNGToWebp": "node ./src/js/convertPNGToWebp.js",
+    "convertJPGToWebp": "node ./src/js/convertJPGToWebp.js",
+    "buildImages": "npm run resizePizzaImage && npm run convertPizzaImageToWebp && npm run compressImages && npm run convertPNGToWebp && npm run convertJPGToWebp"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,8 @@
   "dependencies": {},
   "devDependencies": {
     "imagemin": "^5.2.2",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.0",
     "imagemin-webp": "^4.0.0",
     "lwip": "0.0.9"
   }

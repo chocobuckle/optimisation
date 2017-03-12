@@ -27,7 +27,13 @@
 
   <body>
     <header>
-      <a href="/"><img src="./dist/img/profilepic.jpg"></a>
+      <a href='/'>
+        <picture>
+          <source srcset='./dist/img/profilepic.webp' type='image/webp'>
+          <source srcset='./dist/img/profilepic.jpg' type='image/jpg'>
+          <img src='./dist/img/profilepic.jpg'>
+        </picture>
+      </a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
     </header>
 
