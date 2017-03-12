@@ -12,3 +12,4 @@ imagemin(['./src/img/*.jpg'], './dist/img/', {
 }).then(() => {
     console.log('JPG images lossy converted to Webp.');
 });
+

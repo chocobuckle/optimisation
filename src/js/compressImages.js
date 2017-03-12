@@ -12,3 +12,11 @@ imagemin(['./src/img/*.{jpg,png}'], './dist/img/', {
 }).then(() => {
     console.log('Images compressed.');
 });
+
+imagemin(['./src/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images', {
+    plugins: [
+      imageminMozjpeg()
+    ]
+}).then(() => {
+    console.log('pizzeriaForPizzaHTML.jpg compressed.');
+});
