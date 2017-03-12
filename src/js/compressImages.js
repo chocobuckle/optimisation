@@ -6,7 +6,7 @@ imagemin(['./src/img/*.{jpg,png}'], './dist/img/', {
     plugins: [
       imageminMozjpeg(),
       imageminPngquant({
-        quality: '65-80'
+        quality: '40-55'
       })
     ]
 }).then(() => {
