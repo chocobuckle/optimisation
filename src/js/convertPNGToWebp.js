@@ -4,7 +4,7 @@ const imageminWebp = require('imagemin-webp'); // https://github.com/imagemin/im
 imagemin(['./src/img/*.png'], './dist/img/', {
     use: [
         imageminWebp({
-          quality: 65,
+          quality: 69,
           preset: 'picture',
           method: 6
         })
