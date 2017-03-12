@@ -4,7 +4,7 @@
   "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
   "scripts": {
     "lwip": "node ./src/js/lwip.js",
-    "imageminIndex": "imagemin ./src/img/* --out-dir=build",
+    "imageminIndex": "imagemin ./src/img/* -o ./dist/img/",
     "imageminPizza": "imagemin ./dist/views/images/pizzeria.jpg ./dist/views/images -p=webp"
   },
   "repository": {
