@@ -8,7 +8,8 @@
     "compressImages": "node ./src/js/compressImages.js -s",
     "convertPNGToWebp": "node ./src/js/convertPNGToWebp.js -s",
     "convertJPGToWebp": "node ./src/js/convertJPGToWebp.js -s",
-    "buildImages": "npm run resizePizzaImage -s && npm run convertPizzaImageToWebp -s && npm run compressImages -s && npm run convertPNGToWebp -s && npm run convertJPGToWebp -s"
+    "buildImages": "npm run resizePizzaImage -s && npm run convertPizzaImageToWebp -s && npm run compressImages -s && npm run convertPNGToWebp -s && npm run convertJPGToWebp -s",
+    "critical": "node ./src/js/criticalCSS.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
   "dependencies": {},
   "devDependencies": {
+    "critical": "^0.8.4",
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
