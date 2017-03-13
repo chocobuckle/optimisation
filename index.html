@@ -70,13 +70,8 @@
     <script>
       function logCRP(){var o=window.performance.timing,n=o.domContentLoadedEventStart-o.domLoading,t=o.domComplete-o.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(o){logCRP()});
     </script>
-<!--     <script defer src="https://www.google-analytics.com/analytics.js"></script>
-    <script defer>
-    (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script> -->
+    <script src="./src/js/googleAnalytics.js" async></script>
+    <script src="./src/js/googleAnalyticsObject.js" async></script>
     <link href="./dist/css/print.css" rel="stylesheet" media="print">
   </body>
 </html>
