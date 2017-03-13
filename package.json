@@ -33,7 +33,6 @@
   "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
   "dependencies": {},
   "devDependencies": {
-    "critical": "^0.8.4",
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
