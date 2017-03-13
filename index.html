@@ -14,7 +14,7 @@
         <picture>
           <source srcset='./dist/img/profilepic.webp 70w' type='image/webp'>
           <source srcset='./dist/img/profilepic.jpg 70w' type='image/jpg'>
-          <img src='./dist/img/profilepic.jpg' style="width:70px;">
+          <img src='./dist/img/profilepic.jpg' style="width:70px;" alt="Profile pictire of Cameron Pittman.">
         </picture>
       </a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
@@ -29,7 +29,7 @@
             <picture>
               <source srcset='./dist/img/project-2048.webp 100w' type='image/webp'>
               <source srcset='./dist/img/project-2048.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-2048.jpg" style="width:100px;">
+              <img src="./dist/img/project-2048.jpg" style="width:100px;" alt="Picture of 2048 game.">
             </picture>
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
@@ -38,7 +38,7 @@
             <picture>
               <source srcset='./dist/img/project-webperf.webp 100w' type='image/webp'>
               <source srcset='./dist/img/project-webperf.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-webperf.jpg" style="width:100px;">
+              <img src="./dist/img/project-webperf.jpg" style="width:100px;" alt="Ilya Grigorik talking with Cameron Pittman.">
             </picture>
             <a href="project-webperf.html">Website Performance Optimization</a>
             <p>Hey... this class looks familiar.</p>
@@ -47,7 +47,7 @@
             <picture>
               <source srcset='./dist/img/project-mobile.webp 100w' type='image/webp'>
               <source srcset='./dist/img/project-mobile.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-mobile.jpg" style="width:100px;">
+              <img src="./dist/img/project-mobile.jpg" style="width:100px;" alt="Picture of hands holding various electronic devices.">
             </picture>
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
@@ -56,7 +56,7 @@
             <picture>
               <source srcset='./dist/img/pizzeria.webp 100w' type='image/webp'>
               <source srcset='./dist/img/pizzeria.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/pizzeria.jpg" style="width:100px;">
+              <img src="./dist/img/pizzeria.jpg" style="width:100px;" alt="Picture of a pizzeria.">
             </picture>
             <a href="./dist/views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
@@ -67,16 +67,16 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
-    <script async>
+    <link href="./dist/css/print.css" rel="stylesheet" media="print">
+    <script>
+      function logCRP(){var o=window.performance.timing,n=o.domContentLoadedEventStart-o.domLoading,t=o.domComplete-o.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(o){logCRP()});
+    </script>
+    <script defer src="https://www.google-analytics.com/analytics.js"></script>
+    <script defer>
     (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <script>
-      function logCRP(){var o=window.performance.timing,n=o.domContentLoadedEventStart-o.domLoading,t=o.domComplete-o.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(o){logCRP()});
-    </script>
-    <link href="./dist/css/print.css" rel="stylesheet" media="print">
   </body>
 </html>
