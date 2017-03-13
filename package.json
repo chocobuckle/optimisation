@@ -8,8 +8,7 @@
     "compressImages": "node ./src/js/compressImages.js -s",
     "convertPNGToWebp": "node ./src/js/convertPNGToWebp.js -s",
     "convertJPGToWebp": "node ./src/js/convertJPGToWebp.js -s",
-    "buildImages": "npm run resizePizzaImage -s && npm run convertPizzaImageToWebp -s && npm run compressImages -s && npm run convertPNGToWebp -s && npm run convertJPGToWebp -s",
-    "critical": "node ./src/js/criticalCSS.js"
+    "buildImages": "npm run resizePizzaImage -s && npm run convertPizzaImageToWebp -s && npm run compressImages -s && npm run convertPNGToWebp -s && npm run convertJPGToWebp -s"
   },
   "repository": {
     "type": "git",
