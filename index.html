@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cameron Pittman: Portfolio</title>
     <style type="text/css">
-     .hero,footer{border-top:1px solid #ccc}footer span,li p{font-style:italic}html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff}b,header p,strong{font-weight:700}body,button,input,select,textarea{font-family:'Open Sans',sans-serif;color:#333}@font-face{font-family:'Open Sans';font-weight:400;src:local('Open Sans'),local('OpenSans'),url(fonts/openSans400.woff2) format('woff2'),url(fonts/OpenSans-Regular.ttf) format('truetype')}a{color:#12C}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}code,pre{font-family:monospace,monospace;font-size:1em}ol,ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#C90B0B}header img{border-radius:40px;float:left}header p{font-size:1.5em;padding-left:4em}header p span{font-size:.8em;font-weight:400}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content{padding:1em}.content li{list-style-type:none;font-size:1.1em}li img{float:left;padding-right:1em}li p{font-size:.9em}footer{padding:0 .5em}footer span{float:right}@media only screen and (max-width:480px){body{font-size:12px}header p{padding-left:4.5em}}
+.sprite-img-profile{background:url(./dist/img/sprite.jpg);background-position:0px 0px;width:70px;height:70px}
+.sprite-img-2048{background:url(./dist/img/sprite.jpg);background-position:-70px 0px;width:100px;height:50px;margin-right:1em}
+.sprite-img-webperf{background:url(./dist/img/sprite.jpg);background-position:-170px -0px;width:100px;height:62px;margin-right:1em}
+.sprite-img-mobile{background:url(./dist/img/sprite.jpg);background-position:-270px 0px;width:100px;height:61px;margin-right:1em}
+.sprite-img-pizzeria{background:url(./dist/img/sprite.jpg);background-position:-370px 0px;width:100px;height:75px;margin-right:1em}
+.hero,footer{border-top:1px solid #ccc}footer span,li p{font-style:italic}html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff}b,header p,strong{font-weight:700}body,button,input,select,textarea{font-family:'Open Sans',sans-serif;color:#333}@font-face{font-family:'Open Sans';font-weight:400;src:local('Open Sans'),local('OpenSans'),url(fonts/openSans400.woff2) format('woff2'),url(fonts/OpenSans-Regular.ttf) format('truetype')}a{color:#12C}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}code,pre{font-family:monospace,monospace;font-size:1em}ol,ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#C90B0B}header img{border-radius:40px;float:left}header p{font-size:1.5em;padding-left:4em}header p span{font-size:.8em;font-weight:400}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content{padding:1em}.content li{list-style-type:none;font-size:1.1em}li img{float:left}li p{font-size:.9em}footer{padding:0 .5em}footer span{float:right}@media only screen and (max-width:480px){body{font-size:12px}header p{padding-left:4.5em}}
     </style>
   </head>
   <body>
     <header>
       <a href='/'>
-        <picture>
-          <source srcset='./dist/img/profilepic.webp 70w' type='image/webp'>
-          <source srcset='./dist/img/profilepic.jpg 70w' type='image/jpg'>
-          <img src='./dist/img/profilepic.jpg' style="width:70px;" alt="Profile pictire of Cameron Pittman.">
-        </picture>
+        <img class="sprite-img-profile" src="./dist/img/transparent_placeholder.gif" alt="Profile pictire of Cameron Pittman.">
       </a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
     </header>
@@ -26,38 +27,22 @@
       <div class="content">
         <ul>
           <li>
-            <picture>
-              <source srcset='./dist/img/project-2048.webp 100w' type='image/webp'>
-              <source srcset='./dist/img/project-2048.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-2048.jpg" style="width:100px;" alt="Picture of 2048 game.">
-            </picture>
+            <img class="sprite-img-2048" src="./dist/img/transparent_placeholder.gif" alt="Picture of 2048 game.">
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
           <li>
-            <picture>
-              <source srcset='./dist/img/project-webperf.webp 100w' type='image/webp'>
-              <source srcset='./dist/img/project-webperf.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-webperf.jpg" style="width:100px;" alt="Ilya Grigorik talking with Cameron Pittman.">
-            </picture>
+            <img class="sprite-img-webperf" src="./dist/img/transparent_placeholder.gif" alt="Ilya Grigorik talking with Cameron Pittman.">
             <a href="project-webperf.html">Website Performance Optimization</a>
             <p>Hey... this class looks familiar.</p>
           </li>
           <li>
-            <picture>
-              <source srcset='./dist/img/project-mobile.webp 100w' type='image/webp'>
-              <source srcset='./dist/img/project-mobile.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/project-mobile.jpg" style="width:100px;" alt="Picture of hands holding various electronic devices.">
-            </picture>
+            <img class="sprite-img-mobile" src="./dist/img/transparent_placeholder.gif" alt="Picture of hands holding various electronic devices.">
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
           <li>
-            <picture>
-              <source srcset='./dist/img/pizzeria.webp 100w' type='image/webp'>
-              <source srcset='./dist/img/pizzeria.jpg 100w' type='image/jpg'>
-              <img src="./dist/img/pizzeria.jpg" style="width:100px;" alt="Picture of a pizzeria.">
-            </picture>
+            <img class="sprite-img-pizzeria" src="./dist/img/transparent_placeholder.gif" alt="Picture of a pizzeria.">
             <a href="./dist/views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
