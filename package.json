@@ -5,6 +5,7 @@
   "scripts": {
     "resizePizzaImage": "node ./src/js/resizeImages.js -s",
     "compressImages": "node ./src/js/compressImages.js -s",
+    "base64Img": "node ./src/js/base64.js",
     "buildImages": "npm run resizePizzaImage -s && npm run compressImages -s"
   },
   "repository": {
@@ -29,6 +30,7 @@
   "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
   "dependencies": {},
   "devDependencies": {
+    "base64-img": "^1.0.3",
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
