@@ -73,9 +73,9 @@
       // For more details, see... https://varvy.com/pagespeed/defer-loading-javascript.html
       function downloadJSAndPrintCSSAtOnload() {
         var printCSS = document.createElement('link');
-        link.href = './dist/css/print.css';
-        link.rel = 'stylesheet';
-        link.media = 'print';
+        printCSS.href = './dist/css/print.css';
+        printCSS.rel = 'stylesheet';
+        printCSS.media = 'print';
         var js = document.createElement('script');
         js.src = './dist/js/deferGoogleAnalytics.js';
         document.body.appendChild(printCSS);
