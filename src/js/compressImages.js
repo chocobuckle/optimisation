@@ -5,7 +5,7 @@ const imageminPngquant = require('imagemin-pngquant'); // https://github.com/ima
 imagemin(['./src/img/profilepic.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 85
+        quality: 90
       })
     ]
 }).then(() => {
@@ -15,7 +15,7 @@ imagemin(['./src/img/profilepic.jpg'], './dist/img/', {
 imagemin(['./src/img/project-2048.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 85
+        quality: 90
       })
     ]
 }).then(() => {
@@ -25,7 +25,7 @@ imagemin(['./src/img/project-2048.jpg'], './dist/img/', {
 imagemin(['./src/img/project-webperf.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 85
+        quality: 95
       })
     ]
 }).then(() => {
@@ -35,7 +35,7 @@ imagemin(['./src/img/project-webperf.jpg'], './dist/img/', {
 imagemin(['./src/img/project-mobile.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 80
+        quality: 85
       })
     ]
 }).then(() => {
@@ -45,7 +45,7 @@ imagemin(['./src/img/project-mobile.jpg'], './dist/img/', {
 imagemin(['./dist/img/pizzeria.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 80
+        quality: 85
       })
     ]
 }).then(() => {
