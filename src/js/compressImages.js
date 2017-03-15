@@ -5,52 +5,52 @@ const imageminPngquant = require('imagemin-pngquant'); // https://github.com/ima
 imagemin(['./src/img/profilepic.jpg'], './dist/img/', {
     plugins: [
       imageminMozjpeg({
-        quality: 90
+        quality: 95
       })
     ]
 }).then(() => {
     console.log("'profilepic.jpg' compressed.");
 });
 
-imagemin(['./src/img/project-2048.jpg'], './dist/img/', {
-    plugins: [
-      imageminMozjpeg({
-        quality: 90
-      })
-    ]
-}).then(() => {
-    console.log("'project-2048.jpg' compressed.");
-});
+// imagemin(['./src/img/project-2048.jpg'], './dist/img/', {
+//     plugins: [
+//       imageminMozjpeg({
+//         quality: 90
+//       })
+//     ]
+// }).then(() => {
+//     console.log("'project-2048.jpg' compressed.");
+// });
 
-imagemin(['./src/img/project-webperf.jpg'], './dist/img/', {
-    plugins: [
-      imageminMozjpeg({
-        quality: 95
-      })
-    ]
-}).then(() => {
-    console.log("'project-webperf.jpg' compressed.");
-});
+// imagemin(['./src/img/project-webperf.jpg'], './dist/img/', {
+//     plugins: [
+//       imageminMozjpeg({
+//         quality: 95
+//       })
+//     ]
+// }).then(() => {
+//     console.log("'project-webperf.jpg' compressed.");
+// });
 
-imagemin(['./src/img/project-mobile.jpg'], './dist/img/', {
-    plugins: [
-      imageminMozjpeg({
-        quality: 85
-      })
-    ]
-}).then(() => {
-    console.log("'project-mobile.jpg' compressed.");
-});
+// imagemin(['./src/img/project-mobile.jpg'], './dist/img/', {
+//     plugins: [
+//       imageminMozjpeg({
+//         quality: 85
+//       })
+//     ]
+// }).then(() => {
+//     console.log("'project-mobile.jpg' compressed.");
+// });
 
-imagemin(['./dist/img/pizzeria.jpg'], './dist/img/', {
-    plugins: [
-      imageminMozjpeg({
-        quality: 85
-      })
-    ]
-}).then(() => {
-    console.log("'pizzeria.jpg' compressed.");
-});
+// imagemin(['./dist/img/pizzeria.jpg'], './dist/img/', {
+//     plugins: [
+//       imageminMozjpeg({
+//         quality: 85
+//       })
+//     ]
+// }).then(() => {
+//     console.log("'pizzeria.jpg' compressed.");
+// });
 
 // imagemin(['./dist/views/images/pizzeriaForPizzaHTMLResized.jpg'], './dist/views/images', {
 //     plugins: [
