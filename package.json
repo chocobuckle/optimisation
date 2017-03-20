@@ -6,7 +6,8 @@
     "resizePizzaImage": "node ./src/js/resizeImages.js -s",
     "compressImages": "node ./src/js/compressImages.js -s",
     "buildImages": "npm run resizePizzaImage -s && npm run compressImages -s",
-    "minifyCSS": "cleancss -o ./dist/css/style.min.css ./src/css/style.css"
+    "minifyCSS": "cleancss -o ./dist/css/style.min.css ./src/css/style.css",
+    "inlineCSS": "inline-css -i ./src/index.html -o ./index.html"
   },
   "repository": {
     "type": "git",
