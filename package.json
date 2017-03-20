@@ -6,7 +6,6 @@
     "resizePizzaImage": "node ./src/js/resizeImages.js -s",
     "compressImages": "node ./src/js/compressImages.js -s",
     "buildImages": "npm run resizePizzaImage -s && npm run compressImages -s",
-    "criticalCSS": "node ./src/js/criticalCSS.js",
     "minifyCSS": "cleancss -o ./dist/css/style.min.css ./src/css/style.css"
   },
   "repository": {
@@ -32,11 +31,11 @@
   "dependencies": {},
   "devDependencies": {
     "clean-css-cli": "^4.0.9",
-    "critical": "^0.8.4",
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
     "imagemin-webp": "^4.0.0",
+    "juice": "^4.0.2",
     "lwip": "0.0.9"
   }
 }
