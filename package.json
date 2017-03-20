@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
   "scripts": {
-    "resizePizzaImage": "node ./src/js/resizeImages.js -s",
-    "compressImages": "node ./src/js/compressImages.js -s",
-    "buildImages": "npm run resizePizzaImage -s && npm run compressImages -s",
+    "resizePizzaImage": "node ./src/js/resizeImages.js",
+    "compressImages": "node ./src/js/compressImages.js",
+    "buildImages": "npm run resizePizzaImage && npm run compressImages",
     "minifyCSS": "cleancss -o ./dist/css/style.min.css ./src/css/style.css",
-    "inlineCSS": "inline-css -i ./index-pre-inlined-CSS.html -o ./index.html"
+    "inlineCSS": "inline-css -i ./index-pre-inlined-CSS.html -o ./index.html",
+    "buildCSS": "npm run minifyCSS && npm run inlineCSS"
   },
   "repository": {
     "type": "git",
