@@ -513,7 +513,7 @@ function updatePositions() {
   // Because there are only 5 unique phase values for each scroll event I pushed them to
   // the phaseValues array, so I have references to their constant values.
   for (i = 0; i < 5; i++) {
-    phaseValues.push(Math.sin((cachedScrollTop) + i));
+    phaseValues.push(Math.sin(cachedScrollTop + i));
   }
 
   for (i = 0; i < itemsLength; i++) {
