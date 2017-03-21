@@ -10,11 +10,14 @@ Either click [here](https://chocobuckle.github.io/performance-optimisation/) to 
 
 The project is divided into two parts, the first entailing a website performance optimisation, and the second a browser rendering optimisation. In the first part I was tasked with optimising index.html of a given website so that it achieves a Google Pagespeed score of at last 90 for mobile and desktop. I achieved a score of 96 for mobile and 97 for desktop. The screenshots below show the mobile and desktop Pagespeed scores of the site as provided to me, before I did any optimisations...
 
+Mobile
 ![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-before.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
 
 
 
+Desktop
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-before.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
+
 
 The optimisations I made are as follows:
 
@@ -39,6 +42,7 @@ Desktop
 
 
 To test the PageSpeed score of the site yourself, just click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
+
 
 ## Browser Rendering Optimisation
 
