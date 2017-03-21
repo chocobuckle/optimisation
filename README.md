@@ -8,17 +8,30 @@ Either click [here](https://chocobuckle.github.io/performance-optimisation/) to 
 
 ## Website Performance Optimisation
 
-The project is divided into two parts, the first entailing a website performance optimisation, and the second a browser rendering optimisation. In the first part we were tasked with optimising index.html so that it achieves a Google Pagespeed score of at last 90 for mobile and desktop. I achieved a score of 96 for mobile and 97 for desktop. The optimisations I made are as follows:
+The project is divided into two parts, the first entailing a website performance optimisation, and the second a browser rendering optimisation. In the first part I was tasked with optimising index.html of a given website so that it achieves a Google Pagespeed score of at last 90 for mobile and desktop. I achieved a score of 96 for mobile and 97 for desktop. The screenshots below show the mobile and desktop Pagespeed scores of the site as provided to me, before I did any optimisations...
 
-* Minified and inlined 'style.css', then placed it in a style tag in the index.html header. Removed the call to the external style.css stylesheet.
-* Downloaded fonts and inlined their calls into the style tag in the header. This is quicker than making exertal calls to Google Fonts and removes the possibility of a single point of failure if Google Fonts goes down.
-* Removed the link tag for 'print.css' from the header, and instead chose to construct the tag in 'downloadJSAndPrintCSSAtOnload()', which is a function that is only called when the page's 'onload' event is fired. The newly constructed link tag is only then appended to the document body. This ensures that that the 'print.css' link tag is out of the critical rendering path.
-* The index.html page was originally making an external call to Google to retrieve the 'analytics.js' JavaScript, so I went to the web address the script tag was calling, copied the JavaScript found there, and saved it to a local .js file called 'deferGoogleAnalytics.js'. I then constructed a script tag in the same function mentions above -  'downloadJSAndPrintCSSAtOnload()' - to call the script only when the page's 'onload' event is fired and append the new script to the document body.
-* Removed the external call to perfmatters.js and inlined its function in to the script tag at the bottom of the index.html document body. This function, along with the JavaScript used to construct the 'print.css' and 'deferGoogleAnalytics.js' tags, are all placed within one script tag at the bottom of the document body, instead of placing each of them in 3 separate scripts. By having the page load just one single script the browser minimises its calls to the server.
-* Removed external calls to the 'project-2048', 'project-webperf', and 'project-mobile' images. I instead downloaded the images and constructed a CSS Sprite image between them, the pizzeria image, and the profile image of Cameron Pittman. By doing this the browser can just download the one CSS Sprite image instead of making 5 calls to download 5 different images.
+![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-before.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
+
+![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-before.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
+
+The optimisations I made are as follows:
+
+* Minified and inlined 'style.css', then placed it in a style tag in the index.html header. Removed the call to the external 'style.css' stylesheet.
+* Downloaded fonts and inlined their calls into the style tag in the header. This is quicker than making external calls to Google Fonts and removes the possibility of a single point of failure if Google Fonts goes down.
+* Removed the link tag for 'print.css' from the header, and instead chose to construct the tag in 'downloadJSAndPrintCSSAtOnload', which is a function that is only called when the page's 'onload' event is fired. The newly constructed link tag is only then appended to the document body. This ensures that that the 'print.css' link tag is out of the critical rendering path.
+* The index.html page was originally making an external call to Google to retrieve the 'analytics.js' JavaScript, so I went to the web address the script tag was calling, copied the JavaScript found there, and saved it to a local .js file called 'deferGoogleAnalytics.js'. I then constructed a script tag in the same function mentioned above -  'downloadJSAndPrintCSSAtOnload' - to call the script only when the page's 'onload' event is fired and append the new script to the document body. This solution not only allowed the browser to do less work, but also solved the problem of the original 'analytics.js' script being loaded over http instead of https, resulting in it being blocked by Chrome and labelled as an "insecure" script. The easiest solution to this is usually to just call the script with 'https' in the web address instead of 'http', but better even still is to store the file locally with the rest of your page resources, so the browser has to make less external GET requests.
+* Removed the external call to 'perfmatters.js' and inlined its function into the script tag at the bottom of the 'index.html' document body. This function, along with the JavaScript used to construct the 'print.css' and 'deferGoogleAnalytics.js' tags, are all placed within one script tag at the bottom of the document body, instead of placing each of them in 3 separate scripts. By having the page load just one single script the browser minimises its calls to the server.
+* Removed external calls to the 'project-2048', 'project-webperf', and 'project-mobile' images. I instead downloaded the images and constructed a CSS Sprite image between them, the pizzeria image, and the profile image of Cameron Pittman. By doing this the browser can just download the one CSS Sprite image instead of making 5 calls to download 5 separate images.
 * Resized the 'pizzeria.jpg' image using an NPM script called 'lwip'. I reduced it's size from 2048 x 1536 pixels to just 100 x 75 pixels, which is the maximum resolution required to display the image appropriately at the bottom of index.html.
 * Compressed all images displayed on index.html with the 'imagemin', 'imageminMozjpeg', and 'imageminPngquant' NPM scripts. This allowed me to reduce file sizes for the images by up to 80%.
 
+After the above optimisations the website achieved a mobile/desktop PageSpeed score of 96/97 respectively. See below...
+
+![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-after.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
+
+![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-after.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
+
+To test the PageSpeed score of the site yourself, just click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
 
 ## Browser Rendering Optimisation
 
