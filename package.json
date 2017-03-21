@@ -32,7 +32,6 @@
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "imagemin-webp": "^4.0.0",
     "juice": "^4.0.2",
     "lwip": "0.0.9"
   }

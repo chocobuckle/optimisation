@@ -24,13 +24,10 @@ The project is divided into two parts, the first entailing a website performance
 
 ## NPM Dependencies
 
-* [lwip](https://www.npmjs.com/package/lwip)
-* [clean-css](https://www.npmjs.com/package/clean-css)
-* [inline-css-cli](https://github.com/xtooling/inline-external-css)
 * [imagemin](https://www.npmjs.com/package/imagemin)
 * [imagemin-mozjpeg](https://www.npmjs.com/package/imagemin-mozjpeg)
 * [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
-* [imagemin-webp](https://www.npmjs.com/package/imagemin-webp)
+* [lwip](https://www.npmjs.com/package/lwip)
 
 ## Licence
 
