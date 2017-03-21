@@ -54,12 +54,16 @@ To test the PageSpeed score of the site yourself, just click [here](https://deve
 
 In the second part of the project I was given two tasks. First, to optimise 'dist/views/js/main.js' so that 'dist/views/pizza.html' renders with a consistent frame-rate of 60fps while scrolling, and second, to ensure that the time to resize the pizzas using the slider is less than 5ms.
 
+![Screenshot of pizzeria website.](./screenshots/pizzeria-website.jpg?raw=true "Pizzeria website.")
+
 Please click [here](https://chocobuckle.github.io/rendering-before-optimisation/) to experience the slow, non-optimised version of the site as originally provided to me.
 
 Below you can see a performance timeline profile of the non-optimised site, as captured in Chrome DevTools...
 
+![Screenshot of Chrome DevTools performance timeline, before optimisations.](./screenshots/timeline-before.jpg?raw=true "DevTools performance timeline, before optimisations.")
 
 The red bar stretching across the top of the screen indicates long frames and severe 'jank' problems. Beneath this, the low green chart shows that the page is creeping along at a very slow FPS rate. The next chart below reveals large amounts of CPU resources are being consumed by Javascript(yellow) and CSS(purple) processing. The flame chart represents a visualisation of the CPUT stack trace, and in this case is showing repeated forced synchronous layout calculations, as indicated by the red triangles in the top-right corner of each purple layout event. Finally, the summary pie chart at the bottom of the screen reveals that most of the browser's time is being spent processing performance instensive scripting and rendering.
+
 
 *
 *
