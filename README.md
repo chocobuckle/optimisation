@@ -2,9 +2,13 @@
 
 A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.
 
+## Introduction
+
+As the number of devices users can access an application continues to grow, ensuring a quality user experience across those devices is of upmost importance. Understanding lower-level concepts regarding how the browser works and interprets code enables a developer to produce highly performant applications. This project showcases my skills in identifying performance bottlenecks and optimising web applications for an enjoyable user experience.
+
 ## Getting Started
 
-Either click [here](https://chocobuckle.github.io/performance-optimisation/) to open the site via Github Pages, or just clone/download the repo, unzip the folder to your destination of choice, then click on index.html in the project root folder to open the site in your default web browser. The site is already built, but if you want to test the build process just navigate to the project folder and run 'npm install' to download and install all required dependencies, then run 'npm start' to build the site again.
+Either click [here](https://chocobuckle.github.io/performance-optimisation/) to open the site via Github Pages, or just clone/download the repo, unzip the folder to your destination of choice, then click on index.html in the project root folder to open the site in your default web browser. The site is already built, but if you want to test the image optimisation/build process then just navigate to the project folder in your terminal and run 'npm install' to download and install all required dependencies, then run 'npm start' to optimise the source images again.
 
 ## Website Performance Optimisation
 
@@ -41,15 +45,20 @@ Desktop
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-after.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
 
 
+
 To test the PageSpeed score of the site yourself, just click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
 
 
 ## Browser Rendering Optimisation
 
-* Use the arrow keys to move.
-* The goal is to collect all the treasure required to open one of the doors on the far side of road, whilst avoiding the ladybugs.
-* Treasure chests can only be opened by first collecting the necessary key.
-* You have 3 lives and there are 10 levels. The ladybugs will get faster as you progress and the levels will get increasingly more diffiult to navigate, but patience is your friend. Don't panic and you'll make it to the end.
+In the second part of the project I was tasked with optimising 'views/js/main.js' to make 'views/pizza.html' render with a consistent frame-rate of 60fps while scrolling, and also ensuring that the time to resize the pizzas using the 'pizza size' slider was less than 5ms.
+
+Please click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F) to experience the non-optimised version of the site as originally provided to me.
+
+*
+*
+*
+*
 
 ## NPM Dependencies
 
