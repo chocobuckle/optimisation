@@ -13,6 +13,7 @@ The project is divided into two parts, the first entailing a website performance
 ![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-before.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
 
 
+
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-before.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
 
 The optimisations I made are as follows:
@@ -29,6 +30,7 @@ The optimisations I made are as follows:
 After the above optimisations the website achieved a mobile/desktop PageSpeed score of 96/97 respectively. See below...
 
 ![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-after.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
+
 
 
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-after.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
