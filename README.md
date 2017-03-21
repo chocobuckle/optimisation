@@ -29,11 +29,15 @@ The optimisations I made are as follows:
 
 After the above optimisations the website achieved a mobile/desktop PageSpeed score of 96/97 respectively. See below...
 
+Mobile
+
 ![Screenshot of mobile PageSpeed score, before optimisations.](./screenshots/mobile-after.jpg?raw=true "Mobile PageSpeed score, before optimisations.")
 
 
+Desktop
 
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-after.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
+
 
 To test the PageSpeed score of the site yourself, just click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
 
