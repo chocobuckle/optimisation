@@ -49,7 +49,7 @@ Desktop
 To test the PageSpeed score of the site yourself, just click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
 
 
-## Browser Rendering Optimisation
+## Browser Rendering Optimisatio
 
 In the second part of the project I was tasked with optimising 'views/js/main.js' to make 'views/pizza.html' render with a consistent frame-rate of 60fps while scrolling, and also ensuring that the time to resize the pizzas using the 'pizza size' slider was less than 5ms.
 
