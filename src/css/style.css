@@ -71,8 +71,8 @@ body,button,input,select,textarea {
     font-weight: 400;
     src: local('Open Sans'),
          local('OpenSans'),
-         url(fonts/openSans400.woff2) format('woff2'),
-         url(fonts/OpenSans-Regular.ttf) format('truetype')
+         url(../../fonts/openSans400.woff2) format('woff2'),
+         url(../../fonts/OpenSans-Regular.ttf) format('truetype')
 }
 
 a {

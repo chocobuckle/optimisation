@@ -5,11 +5,7 @@
   "scripts": {
     "resizePizzaImage": "node ./src/js/resizeImages.js",
     "compressImages": "node ./src/js/compressImages.js",
-    "buildImages": "npm run resizePizzaImage && npm run compressImages",
-    "minifyCSS": "cleancss -o ./dist/css/style.min.css ./src/css/style.css",
-    "inlineCSS": "inline-css -i ./index-pre-inlined-CSS.html -o ./index.html",
-    "buildCSS": "npm run minifyCSS && npm run inlineCSS",
-    "start": "npm run buildImages && npm run buildCSS"
+    "start": "npm run resizePizzaImage && npm run compressImages"
   },
   "repository": {
     "type": "git",
@@ -33,7 +29,6 @@
   "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
   "dependencies": {},
   "devDependencies": {
-    "clean-css-cli": "^4.0.9",
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
