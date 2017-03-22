@@ -519,8 +519,8 @@ function updatePositions() {
   for (i = 0; i < itemsLength; i++) {
     phase = phaseValues[i % 5];
 
-    // Promoting the background pizza animation to the GPU with 'transform = translate3d'
-    // because it has better browser support than 'will-change'.
+    // Promoting the background pizza animation to the GPU with 'transform = translate3d'.
+    // I've chosen 'translate3d' over 'will-change' because the former has better browser support.
     items[i].style.transform = 'translate3d(' + (100 * phase) + 'px, 0, 0)';
   }
 
