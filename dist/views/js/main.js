@@ -562,6 +562,8 @@ function loadPizzas() {
     movingPizzas1.removeChild(movingPizzas1.firstChild);
   }
 
+  var fragment = document.createDocumentFragment();
+
   for (i = 0; i < pizzaAmount; i++) {
     elem = document.createElement('img');
     elem.classList.add('mover');
@@ -571,8 +573,10 @@ function loadPizzas() {
     elem.style.width = "73.333px";
     elem.style.left = (i % pizzaColumns) * s + 'px';
     elem.style.top = (Math.floor(i / pizzaColumns) * s) + 'px';
-    movingPizzas1.appendChild(elem);
+    fragment.appendChild(elem);
   }
+
+  movingPizzas1.appendChild(fragment);
   window.items = document.getElementsByClassName('mover');
   window.pizzaStats = pizzaStats;
   updatePositions();
@@ -598,7 +602,7 @@ function calculatePizzas() {
     pizzaStats[1] = 40;
   } else if(width > 1024 && width <= 1920) {
     pizzaStats[0] = 8;
-    pizzaStats[1] = 32;
+    pizzaStats[1] = 40;
   } else {
     pizzaStats[0] = 12;
     pizzaStats[1] = 72;
