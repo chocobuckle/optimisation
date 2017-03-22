@@ -72,6 +72,8 @@ Below is a screenshot of the DevTools performance timeline after all the above o
 
 Here, a consistent 60FPS is achieved, 'jank' is gone, CPU calculations are minimal, the flame chart is no longer alerting forced synchronous layout events, and the summary pie chart shows that the browser is spending far less time scripting, rendering, and painting. The end result is a greatly improved user experience.
 
+Click [here](https://chocobuckle.github.io/performance-optimisation/dist/views/pizza.html) to view the fully optimised 'pizza.html' page.
+
 ## NPM Dependencies
 
 * [imagemin](https://www.npmjs.com/package/imagemin)
