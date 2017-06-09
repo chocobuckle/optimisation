@@ -4,7 +4,7 @@ A website performance/rendering optimisation, submitted as a project for the Uda
 
 ## Introduction
 
-As the number of devices users can access an application continues to grow, ensuring a quality user experience across those devices is of upmost importance. Understanding lower-level concepts regarding how the browser works and interprets code enables a developer to produce highly performant applications. This project showcases my skills in identifying performance bottlenecks and optimising web applications for an enjoyable user experience.
+As the number of devices users can access an application with continues to grow, ensuring a quality user experience across those devices is of upmost importance. Understanding lower-level concepts regarding how the browser works and interprets code enables a developer to produce highly performant applications. This project showcases my skills in identifying performance bottlenecks and optimising web applications for an enjoyable user experience.
 
 ## Getting Started
 
