@@ -52,7 +52,7 @@ In the second part of the project I was given two tasks. First, to optimise 'dis
 
 ![Screenshot of pizzeria website.](./screenshots/pizzeria-website.jpg?raw=true "Pizzeria website.")
 
-Please click [here](https://chocobuckle.github.io/rendering-before-optimisation/) to experience the slow, unoptimised version of the site as originally provided to me.
+Please click [here](https://chocobuckle.github.io/browser-rendering-before/) to experience the slow, unoptimised version of the site as originally provided to me.
 
 Below you can see a performance timeline profile of the unoptimised site, as captured in Chrome DevTools...
 
