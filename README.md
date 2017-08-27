@@ -20,7 +20,9 @@ Mobile
 Desktop
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-before.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
 
-The optimisations I then implemented were the following:
+You can also click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation-before%2F&tab=mobile) to run PageSpeed Insights on the unoptimised version of the site yourself.
+
+The optimisations I then implemented to improve the performance of the site entailed the following:
 
 * Removed external calls to the 'project-2048', 'project-webperf', and 'project-mobile' images. I instead downloaded the images and constructed a CSS Sprite image between them, the pizzeria image, and the profile image of Cameron Pittman. By doing this the browser can just download the one CSS Sprite image instead of making 5 calls to download 5 separate images.
 * Removed the link tag for 'print.css' from the header, and instead chose to construct the tag in 'downloadJSAndPrintCSSAtOnload', which is a function that is only called when the page's 'onload' event is fired. The newly constructed link tag is only then appended to the document body. This ensures that that the 'print.css' link tag is out of the critical rendering path.
