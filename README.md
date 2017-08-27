@@ -1,4 +1,4 @@
-# Performance and Rendering Optimisation
+# Website Performance and Browser Rendering Optimisation
 
 A website performance/rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.
 
