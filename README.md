@@ -8,7 +8,7 @@ As the number of devices users can access an application with continues to grow,
 
 ## Getting Started
 
-Either click [here](https://chocobuckle.github.io/performance-optimisation/) to open the site via Github Pages, or just clone/download the repo, unzip the folder to your destination of choice, then click on index.html in the project root folder to open the site in your default web browser. The site is already built, but if you want to test the image optimisation/build process then navigate to the project folder in your terminal and run 'npm install' to download and install all required dependencies, then run 'npm start' to optimise the source images again.
+Either click [here](https://chocobuckle.github.io/optimisation/) to open the site via Github Pages, or just clone/download the repo, unzip the folder to your destination of choice, then click on index.html in the project root folder to open the site in your default web browser. The site is already built, but if you want to test the image optimisation/build process then navigate to the project folder in your terminal and run 'npm install' to download and install all required dependencies, then run 'npm start' to optimise the source images again.
 
 ## Website Performance Optimisation
 
@@ -39,7 +39,7 @@ Mobile
 Desktop
 ![Screenshot of desktop PageSpeed score, before optimisations.](./screenshots/desktop-after.jpg?raw=true "Desktop PageSpeed score, before optimisations.")
 
-To test the PageSpeed score of the site yourself, click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Fperformance-optimisation%2F).
+To test the PageSpeed score of the site yourself, click [here](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fchocobuckle.github.io%2Foptimisation%2F).
 
 
 ## Browser Rendering Optimisation
@@ -73,7 +73,7 @@ Below is a screenshot of the DevTools performance timeline after all the above o
 
 Here, a consistent 60FPS is achieved, 'jank' is gone, CPU calculations are minimal, the flame chart is no longer alerting forced synchronous layout events, and the summary pie chart shows that the browser is spending far less time scripting, rendering, and painting. The end result is a greatly improved user experience.
 
-Please click [here](https://chocobuckle.github.io/performance-optimisation/dist/views/pizza.html) to view the fully optimised 'pizza.html' page.
+Please click [here](https://chocobuckle.github.io/optimisation/dist/views/pizza.html) to view the fully optimised 'pizza.html' page.
 
 ## NPM Dependencies
 
@@ -84,6 +84,6 @@ Please click [here](https://chocobuckle.github.io/performance-optimisation/dist/
 
 ## Licence
 
-The contents of this repository are covered under the [MIT License](https://github.com/chocobuckle/performance-optimisation/blob/master/LICENSE.txt).
+The contents of this repository are covered under the [MIT License](https://github.com/chocobuckle/optimisation/blob/master/LICENSE.txt).
 
 
